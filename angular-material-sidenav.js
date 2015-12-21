@@ -104,6 +104,8 @@
                                 child.pages.forEach(function(page) {
                                     matchPage(child, page, newState);
                                 });
+                            }else if(child.type === 'link'){
+                                matchPage(section, child, newState);
                             }
                         });
                     } else if (section.pages) {
